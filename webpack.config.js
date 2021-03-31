@@ -36,12 +36,25 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
         type: 'asset/resource',
       },
       {
         test: /\.html$/i,
         loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              // All default supported tags and attributes
+              '...',
+              {
+                tag: 'a',
+                attribute: 'href',
+                type: 'src'
+              }
+            ]
+          }
+        }
       },
       // BABEL
       // {
