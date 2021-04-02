@@ -1,10 +1,10 @@
 /** 360 x 640 **/
 
 .headshot-container {
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .headshot {
@@ -12,11 +12,16 @@
 }
 
 .about-copy {
-  background-color: pink;
-  margin-bottom: 10px;
+  position: relative;
+  top: -10px;
 }
 
-.download-resume input {
+.download-resume {
+  text-align: center;
+  font-weight: 700;
+}
+
+.download-resume img {
   width: 20px;
   vertical-align: middle;
 }

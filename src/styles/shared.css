@@ -4,26 +4,67 @@ body {
 
 /** dev helpers **/
 
-div {
+/* div {
   border: solid 1px black;
-  box-sizing: border-box;
 }
 
 section {
   border: solid 1px blue;
-  box-sizing: border-box;
 }
 
 h1 {
   border: solid 1px green;
+} */
+
+/** 360 x 460 **/
+
+div {
   box-sizing: border-box;
 }
 
-/** 360 x 460 **/
+section {
+  box-sizing: border-box;
+}
+
+h1 {
+  box-sizing: border-box;
+}
+
+:root {
+  --video-width-small: 252px;
+  --video-height-small: 200px;
+  --connect-icon-small: 150px;
+
+}
 
 p {
   margin: 0;
 }
+
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
 
 .container {
   width: 100%;
@@ -35,34 +76,41 @@ p {
 
 .section-container {
   width: 100%;
-  min-width: 360px;
+  min-width: max-content;
   height: max-content;
   min-height: 100vh;
   display: grid;
   justify-items: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 5px;
 }
 
 .centered-container {
-  width: 325px;
+  width: 320px;
 }
 
-.content-container {
+.content {
   width: 100%;
+  border-top: solid 4px black;
+  margin-top: 25px;
 }
+
 
 .section-heading {
-  margin: 0;
-  height: 40px;
+  margin: auto;;
   width: max-content;
   position: relative;
   background-color: white;
-  top: -20px;
+  height: 50px;
+  top: -25px;
 }
 
 .section-heading > img {
   height: 100%;
+}
+
+.content {
+  position: relative;
+  top: 0px;
 }
 

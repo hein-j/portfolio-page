@@ -1,0 +1,92 @@
+.work-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  align-items: center;
+  height: 450px;
+}
+
+.slider-button-container {
+  width: 30px;
+}
+
+.slider-button-container.previous {
+  padding-right: 15px;
+}
+
+.slider-button-container.next {
+  padding-left: 15px;
+}
+
+.slider-button-container > input {
+  width: 100%;
+  display: block;
+}
+
+.slider-frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(0);
+  transition: transform 300ms cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
+
+.outgoing-previous {
+  transform: translateX(var(--video-width-small));
+}
+
+.outgoing-next {
+  transform: translateX(calc(-1 * var(--video-width-small)));
+}
+
+.incoming-previous {
+  transform: translateX(calc(-1 * var(--video-width-small)));
+}
+
+.incoming-next {
+  transform: translateX(var(--video-width-small));
+}
+
+video {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.description-copy {
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.work-icon-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0,max-content));
+  justify-content: center;
+  grid-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.work-icon-container img {
+  height: 30px;
+  display: block;
+}
+
+.stack-copy {
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}

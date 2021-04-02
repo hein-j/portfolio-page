@@ -1,0 +1,88 @@
+.tools-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 25px;
+  column-gap: 15px;
+  position: relative;
+}
+
+.tools-icon-container {
+  display: grid;
+  align-items: center;
+}
+
+.tools-icon {
+  width: max-content;
+  justify-self: right;
+}
+
+.tools-icon > img {
+  display: block;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.tools-icon > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.budding.tools-icon {
+  justify-self: left;
+}
+
+.budding.tools-icon >img {
+  width: 60px;
+}
+
+.budding.tools-copy-container {
+  text-align: right;
+}
+
+.tools-copy {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tools-copy > ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.expand-aws {
+  cursor: pointer;
+}
+
+.expand-aws-button {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: hsl(0, 0%, 80%);
+  margin: 0;
+  position: relative;
+  border: none;
+  border-left: solid 5px white;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.aws-details {
+  height: 0;
+  overflow: hidden;
+}
+
+.expand-transition {
+  transition: height 300ms ease-in-out;
+}
+
+.expanded-aws-details {
+  height: 189px;
+}
+
+

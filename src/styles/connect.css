@@ -1,0 +1,34 @@
+.connect-icon-container {
+  margin: auto;
+  margin-bottom: 20px;
+  width: max-content;
+}
+
+.connect-icon-container img {
+  max-height: var(--connect-icon-small);
+  max-width: var(--connect-icon-small);
+}
+
+.connect-icon-container > input {
+  max-height: var(--connect-icon-small);
+  max-width: var(--connect-icon-small);
+}
+
+.mail-container > input {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.mail-container > span {
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  height: 0px;
+  overflow: hidden;
+  transition: height 300ms ease-in-out;
+}
+
+.mail-container > span.expanded-email {
+  height: 20px;
+}
