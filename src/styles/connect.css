@@ -1,3 +1,5 @@
+/** 360 x 640 **/
+
 .connect-icon-container {
   margin: auto;
   margin-bottom: 20px;
@@ -31,4 +33,37 @@
 
 .mail-container > span.expanded-email {
   height: 20px;
+}
+
+/** 768 x 800 **/
+@media(min-width: 768px) {
+  .connect-icons {
+    margin-top: 10px;
+  }
+
+  .connect-icon-container {
+    margin-bottom: 30px;
+  }
+
+  .connect-icon-container img {
+    max-height: var(--connect-icon-medium);
+    max-width: var(--connect-icon-medium);
+  }
+  
+  .connect-icon-container > input {
+    max-height: var(--connect-icon-medium);
+    max-width: var(--connect-icon-medium);
+  }
+
+  .mail-container > input {
+    margin-bottom: 20px;
+  }
+
+  .mail-container > span.expanded-email {
+    height: 30px;
+  }
+
+
+  
+
 }

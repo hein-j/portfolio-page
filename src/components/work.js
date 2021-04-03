@@ -4,11 +4,16 @@ import summer from '../assets/videos/summer.mp4';
 import fall from '../assets/videos/fall.mp4';
 import winter from '../assets/videos/winter.mp4';
 import github from '../assets/icons/github.svg';
+import website from '../assets/icons/website.svg';
 
 const icons = {
   github: {
     img: github,
     alt: 'github'
+  },
+  website: {
+    img: website,
+    alt: 'website'
   }
 }
 
@@ -18,24 +23,28 @@ const makeIcon = (iconObj, url) => {
 
 const content = [
   {
+    class: 'spring',
     video: spring,
     description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in both development and deployment.',
-    icons: `${makeIcon(icons.github, 'https://google.com')} ${makeIcon(icons.github, 'https://youtube.com')}`,
+    icons: `${makeIcon(icons.github, 'https://google.com')} ${makeIcon(icons.website, 'https://youtube.com')}`,
     stack: 'Angular, AWS, Express/Node, Postgres'
   },
   {
+    class: 'summer',
     video: summer,
     description: 'ore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, c',
     icons: 'icon icon',
     stack: 'Angular, AWS, Express/Node, Postgres'
   },
   {
+    class: 'fall',
     video: fall,
     description: 'itecto beatae vitae dicta sunt explicabo. Neitecto beatae vitae dicta sunt explicabo. Ne',
     icons: 'icon icon',
     stack: 'angular, node, whatever'
   },
   {
+    class: 'winter',
     video: winter,
     description: 're veritatis et quare veritatis et quare veritatis et qua',
     icons: 'icon icon',
@@ -61,7 +70,7 @@ const toggleButtons = () => {
 const makeSlide = (index) => {
   const item = content[index];
   let slide = document.createElement('div');
-  slide.classList.add('slide');
+  slide.classList.add('slide', item.class);
   slide.innerHTML = 
     `<video muted autoplay loop playsinline>` +
       `<source src=${item.video} type="video/mp4">` +

@@ -1,3 +1,5 @@
+/** 360 x 640 **/
+
 .tools-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -49,7 +51,7 @@
   list-style-type: none;
 }
 
-.tools-copy > ul {
+.tools-copy ul {
   margin: 0;
   padding-left: 20px;
   list-style-type: none;
@@ -68,7 +70,6 @@
   border: none;
   border-left: solid 5px white;
   cursor: pointer;
-  font-size: 15px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -85,4 +86,34 @@
   height: 189px;
 }
 
+/** 768 x 800 **/
 
+@media(min-width: 768px) {
+  .tools-container {
+    margin-top: 10px;
+    row-gap: 35px;
+    column-gap: 40px;
+  }
+
+  .tools-icon > img {
+    width: 170px;
+  }
+
+  .budding.tools-icon > img {
+    width: 85px;
+  }
+
+  .tools-copy > ul {
+    padding-left: 25px;
+  }
+
+  .expand-aws-button {
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: solid 8px white;
+  }
+
+  .expanded-aws-details {
+    height: 250px;
+  }
+}

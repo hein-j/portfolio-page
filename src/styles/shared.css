@@ -31,9 +31,12 @@ h1 {
 }
 
 :root {
-  --video-width-small: 252px;
+  --video-width-small: 250px;
   --video-height-small: 200px;
   --connect-icon-small: 150px;
+  --video-width-medium: 610px;
+  --video-height-medium: 380px;
+  --connect-icon-medium: 200px;
 
 }
 
@@ -57,7 +60,7 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 120%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -86,7 +89,7 @@ button:focus {
 }
 
 .centered-container {
-  width: 320px;
+  width: 315px;
 }
 
 .content {
@@ -109,8 +112,29 @@ button:focus {
   height: 100%;
 }
 
-.content {
-  position: relative;
-  top: 0px;
-}
+/** 768 x 800 **/
 
+@media(min-width: 768px) {
+
+  .container {
+    font-size: 18px;
+  }
+
+  .section-container {
+    padding: 30px 5px;
+  }
+
+  .centered-container {
+    width: 672px;
+  }
+
+  .content {
+    border-top: solid 5px black;
+    margin-top: 38px;
+  }
+
+  .section-heading {
+    height: 75px;
+    top: -38px;
+  }
+}

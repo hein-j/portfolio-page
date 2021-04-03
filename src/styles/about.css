@@ -1,14 +1,52 @@
 /** 360 x 640 **/
 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.first-fadein {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.second-fadein {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.third-fadein {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
 .headshot-container {
   height: 230px;
   width: 230px;
   margin: auto;
   margin-bottom: 50px;
+  position: relative;
 }
+
 
 .headshot {
   width: 100%;
+  filter: drop-shadow(5px 5px 0 white) drop-shadow(3px 3px 0 black);
 }
 
 .about-copy {
@@ -22,6 +60,33 @@
 }
 
 .download-resume img {
-  width: 20px;
+  width: 18px;
   vertical-align: middle;
+}
+
+/** 768 x 800 **/
+
+@media(min-width: 768px) {
+  .headshot-container {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 80px;
+  }
+
+  .headshot {
+    filter: drop-shadow(8px 8px 0 white) drop-shadow(4px 4px 0 black); 
+  }
+
+  .about-copy {
+    top: -20px;
+  }
+
+  .download-resume img {
+    width: 20px;
+  }
+
+
+
+
+
 }

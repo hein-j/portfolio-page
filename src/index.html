@@ -6,31 +6,36 @@
   <title>Hein Jeong</title>
   <meta name="viewport"
     content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1>
+    -->
+    <link rel="icon" 
+      type="image/svg" 
+      href="./assets/icons/favicon.svg">
+    <script>history.scrollRestoration = "manual"</script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=block" rel="stylesheet">
 </head>
-
 <body>
   <div class="container">
     <section id="about" class="section-container">
       <div class="centered-container">
-        <div class="headshot-container">
-          <picture>
-            <img class="headshot" src="./assets/pictures/headshot.jpg" alt="hein j eong">
-          </picture>
+        <div class="headshot-container third-fadein">
+            <img class="headshot" src="./assets/pictures/headshot.png" alt="hein jeong">
         </div>
 
         <div class="content">
-          <h1 class="section-heading">
+          <h1 class="section-heading first-fadein">
             <img src="./assets/texts/about.svg" alt="hi, i'm hein">
           </h1>
-          <p class="about-copy">
+          <p class="about-copy second-fadein">
             I’m a web developer based in California with full-stack experience. My road here was a winding one: I
             majored in philosophy and explored several careers before choosing development. I’m grateful to all the
             people—from good friends to anonymous Stack Overflowers—who have helped me hit the ground running.
           </p>
-          <div class="download-resume">
+          <div class="download-resume second-fadein">
             <a href="assets/pdfs/hein-jeong-resume.pdf" download="hein-jeong-resume">
               <img src="./assets/icons/download.svg" alt="download resume">
               Resume
@@ -68,6 +73,19 @@
                   <li>S3</li>
                   <li>WAF</li>
                 </ul>
+                <noscript>
+                  <ul class="expanded-aws-details">
+                    <li>Certificate Manager</li>
+                    <li>Cloudfront</li>
+                    <li>CodePipeline</li>
+                    <li>Elastic Beanstalk</li>
+                    <li>Elasticache</li>
+                    <li>RDS</li>
+                    <li>Route 53</li>
+                    <li>S3</li>
+                    <li>WAF</li>
+                  </ul>
+                </noscript>
                 <li>CSS</li>
                 <li>Express</li>
                 <li>Git</li>
@@ -98,7 +116,6 @@
     </section>
     <section id="work" class="section-container">
       <div class="centered-container">
-
         <div class="content">
           <h1 class="section-heading">
             <img src="./assets/texts/work.svg" alt="work">
@@ -108,6 +125,11 @@
               <input type="image" src="assets/icons/previous.svg" alt="previous">
             </div>
             <div class="slider-frame">
+              <noscript>
+                <div class="noscript-work">
+                  <span>Please enable javascript to view projects</span>
+                </div>
+              </noscript>
             </div>
             <div class="slider-button-container next">
               <input type="image" src="assets/icons/next.svg" alt="next">
