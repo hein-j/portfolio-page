@@ -5,26 +5,39 @@
   width: 100%;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
-  align-items: center;
-  justify-items: center;
   height: 500px;
 }
 
 .slider-button-container {
+  will-change: opacity;
   width: 30px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  transition: opacity 300ms ease-in-out;
+}
+
+.slider-button-container.disabled {
+  opacity: .2;
+  pointer-events: none;
+  cursor: default;
 }
 
 .slider-button-container.previous {
-  padding-right: 15px;
+  padding-right: 13px;
 }
 
 .slider-button-container.next {
-  padding-left: 15px;
+  padding-left: 13px;
 }
 
 .slider-button-container > input {
   width: 100%;
   display: block;
+}
+
+.slider-button-container > input:disabled {
+  opacity: .2;
 }
 
 .slider-frame {

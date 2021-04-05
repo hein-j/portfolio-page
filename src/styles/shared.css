@@ -16,7 +16,7 @@ h1 {
   border: solid 1px green;
 } */
 
-/** 360 x 460 **/
+/** 360 x 640 **/
 
 div {
   box-sizing: border-box;
@@ -47,10 +47,6 @@ p {
 
 input:focus {
   outline: none;
-}
-
-input:disabled {
-  opacity: .2;
 }
 
 a {
@@ -141,6 +137,10 @@ button:focus {
   animation-duration: .3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.delay {
+  animation-delay: .3s;
 }
 
 /** 768 x 800 **/

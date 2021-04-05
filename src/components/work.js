@@ -59,10 +59,10 @@ Number.prototype.mod = function() {
 
 const sliderFrame = document.querySelector(".slider-frame");
 
-const buttons = [... document.querySelectorAll(".slider-button-container > input")];
+const buttons = [... document.querySelectorAll(".slider-button-container")];
 
 const toggleButtons = () => {
-  buttons.forEach((button) => button.disabled = !button.disabled)
+  buttons.forEach((button) => button.classList.toggle('disabled'))
 }
 
 const makeSlide = (index) => {
