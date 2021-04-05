@@ -112,6 +112,8 @@ const change = (direction) => {
       }, Transition)
     }
   });
+  // make sure that event listener fires
+  video.load();
 }
 
 change('init');
