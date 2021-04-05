@@ -97,23 +97,25 @@ const change = (direction) => {
   }
   let slide = makeSlide(currIndex);
   sliderFrame.appendChild(slide);
+  if (direction === 'init') {
+    slide.classList.remove('init-fade');
+    toggleButtons();
+    return;
+  }
   let video = slide.children[0];
-  video.addEventListener('loadeddata', () => {
-    if(video.readyState === 4) {
-      slide.classList.add('end-fade');
-      // wait for animation to finish
-      setTimeout (() => {
-        if (direction === 'previous' || direction === 'next') {
-          // remove former slide
-          sliderFrame.children[1].remove();
-        }
-        // reactivate buttons
-        toggleButtons();
-      }, Transition)
-    }
-  });
-  // make sure that event listener fires
-  video.load();
+  const whenReady = () => {
+    // canplaythrough seems to fire multiple times
+    video.removeEventListener('canplaythrough', whenReady);
+    slide.classList.add('end-fade');
+    // wait for animation to finish
+    setTimeout (() => {
+      // remove former slide
+      sliderFrame.children[1].remove();
+      // reactivate buttons
+      toggleButtons();
+    }, Transition)
+  }
+  video.addEventListener('canplaythrough', whenReady);
 }
 
 change('init');
