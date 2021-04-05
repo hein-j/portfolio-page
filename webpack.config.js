@@ -9,7 +9,11 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
-    clean: true
+    clean: {
+      keep(asset) {
+        return asset.includes('CNAME');
+      },
+    }
   },
   // DEVELOPMENT
   devtool: 'inline-source-map',
