@@ -22,6 +22,13 @@
       el.classList.add("end-fade")
     }
   </script>
+  <noscript>
+    <style>
+      #about .init-fade {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
   <div class="container">
@@ -30,7 +37,6 @@
         <div class="headshot-container">
             <img class="headshot init-fade" onload="fadeIn(this)" src="./assets/pictures/headshot.png" alt="hein jeong">
         </div>
-
         <div class="content fadeIn-animation">
           <h1 class="section-heading">
             <img class="init-fade" onload="fadeIn(this)" src="./assets/texts/about.svg" alt="hi, i'm hein">
