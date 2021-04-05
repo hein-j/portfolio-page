@@ -102,7 +102,7 @@ const change = (direction) => {
   slide = makeSlide(currIndex);
   slide.classList.add(`incoming-${direction}`);
   sliderFrame.appendChild(slide);
-  const currSlide = sliderFrame.firstElementChild;
+  const currSlide = sliderFrame.children[1];
   currSlide.classList.add(`outgoing-${direction}`);
   /**give a little delay to avoid occasional transition stutter */
   setTimeout(()=> {

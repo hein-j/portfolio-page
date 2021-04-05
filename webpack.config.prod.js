@@ -12,9 +12,9 @@ module.exports = {
     clean: true
   },
   // DEVELOPMENT
-  devtool: 'inline-source-map',
+  //devtool: 'inline-source-map',
   // DEVELOPMENT
-  mode: 'development',
+  mode: 'production',
   devServer: {
     contentBase: './dist',
   },
