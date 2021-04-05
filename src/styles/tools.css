@@ -74,11 +74,9 @@
 }
 
 .aws-details {
+  will-change: height;
   height: 0;
   overflow: hidden;
-}
-
-.expand-transition {
   transition: height 300ms ease-in-out;
 }
 

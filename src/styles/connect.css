@@ -23,6 +23,7 @@
 }
 
 .mail-container > span {
+  will-change: height;
   display: block;
   margin: auto;
   font-weight: 700;

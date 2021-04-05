@@ -57,8 +57,6 @@ Number.prototype.mod = function() {
   return ((this%n)+n)%n;
 };
 
-let currIndex = 0;
-
 const sliderFrame = document.querySelector(".slider-frame");
 
 const buttons = [... document.querySelectorAll(".slider-button-container > input")];
@@ -70,7 +68,7 @@ const toggleButtons = () => {
 const makeSlide = (index) => {
   const item = content[index];
   let slide = document.createElement('div');
-  slide.classList.add('slide', item.class);
+  slide.classList.add('slide', item.class, 'init-fade');
   slide.innerHTML = 
     `<video muted autoplay loop playsinline>` +
       `<source src=${item.video} type="video/mp4">` +
@@ -85,34 +83,35 @@ const makeSlide = (index) => {
   return slide;
 }
 
+// actual transition duration plus buffer
 const Transition = 300 + 100;
 
+let currIndex = 0;
+
 const change = (direction) => {
-  let slide;
-  if (direction === 'init') {
-    slide = makeSlide(currIndex);
-    sliderFrame.appendChild(slide);
-    return;
-  } else if (direction === 'previous') {
-    currIndex = (currIndex -1).mod();
+  toggleButtons();
+  if (direction === 'previous') {
+    currIndex = (currIndex - 1).mod();
   } else if (direction === 'next') {
     currIndex = (currIndex + 1).mod();
   }
-  toggleButtons();
-  slide = makeSlide(currIndex);
-  slide.classList.add(`incoming-${direction}`);
+  let slide = makeSlide(currIndex);
   sliderFrame.appendChild(slide);
-  const currSlide = sliderFrame.children[1];
-  currSlide.classList.add(`outgoing-${direction}`);
-  /**give a little delay to avoid occasional transition stutter */
-  setTimeout(()=> {
-    slide.classList.remove(`incoming-${direction}`);
-    /** remove currslide and reactivate buttons after transition completes */
-    setTimeout(()=> {
-      currSlide.remove();
-      toggleButtons();
-    }, Transition)
-  }, 70)
+  let video = slide.children[0];
+  video.addEventListener('loadeddata', () => {
+    if(video.readyState === 4) {
+      slide.classList.add('end-fade');
+      // wait for animation to finish
+      setTimeout (() => {
+        if (direction === 'previous' || direction === 'next') {
+          // remove former slide
+          sliderFrame.children[1].remove();
+        }
+        // reactivate buttons
+        toggleButtons();
+      }, Transition)
+    }
+  });
 }
 
 change('init');

@@ -1,40 +1,4 @@
 /** 360 x 640 **/
-
-
-@keyframes why {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.first-fade-in {
-  animation-name: why;
-  animation-duration: 1s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-}
-
-.second-fade-in {
-  opacity: 0;
-  animation-name: why;
-  animation-duration: 1s;
-  animation-delay: .5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-}
-
-.third-fade-in {
-  opacity: 0;
-  animation-name: why;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-}
-
 .headshot-container {
   height: 230px;
   width: 230px;
