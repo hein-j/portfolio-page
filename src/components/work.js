@@ -18,7 +18,7 @@ const icons = {
 }
 
 const makeIcon = (iconObj, url) => {
-  return `<a target="_blank" href=${url}><img src=${iconObj.img} alt=${iconObj.alt}></a>`
+  return `<a target="_blank" rel="noreferrer" href=${url}><img src=${iconObj.img} alt=${iconObj.alt}></a>`
 }
 
 const content = [
@@ -27,21 +27,21 @@ const content = [
     video: spring,
     description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in both development and deployment.',
     icons: `${makeIcon(icons.github, 'https://google.com')} ${makeIcon(icons.website, 'https://youtube.com')}`,
-    stack: 'Angular, AWS, Express/Node, Postgres'
+    stack: 'Angular, AWS, Node (Express), Postgres'
   },
   {
     class: 'summer',
     video: summer,
-    description: 'ore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, c',
+    description: 'Built at the request of a ophthalmological researcher, this web app generates the Voronoi diagram of a given set of coordinates and performs statistical analysis on the areas of the resulting polygons.',
     icons: 'icon icon',
-    stack: 'Angular, AWS, Express/Node, Postgres'
+    stack: 'D3.js, React, Sass'
   },
   {
     class: 'fall',
     video: fall,
-    description: 'itecto beatae vitae dicta sunt explicabo. Neitecto beatae vitae dicta sunt explicabo. Ne',
+    description: 'Ayurveda is a system of traditional medicine with roots in ancient India. This REST API provides information on what it says about specific food items, so that end users can make dietary choices informed by ayurveda.',
     icons: 'icon icon',
-    stack: 'angular, node, whatever'
+    stack: 'Digital Ocean, MongoDB, Node (Express)'
   },
   {
     class: 'winter',

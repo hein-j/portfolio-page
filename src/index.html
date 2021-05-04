@@ -4,12 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Hein Jeong</title>
+  <!-- <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"> -->
   <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <!--
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1>
-    -->
+    content="width=device-width, initial-scale=1">
     <link rel="icon" 
       type="image/svg" 
       href="./assets/icons/favicon.svg">
@@ -32,21 +30,21 @@
 </head>
 <body>
   <div class="container">
-    <section id="about" class="section-container">
+    <section id="about" class="section-container fadeIn-animation">
       <div class="centered-container">
         <div class="headshot-container">
             <img class="headshot init-fade" onload="fadeIn(this)" src="./assets/pictures/headshot.png" alt="hein jeong">
         </div>
-        <div class="content fadeIn-animation">
+        <div class="content">
           <h1 class="section-heading">
             <img class="init-fade" onload="fadeIn(this)" src="./assets/texts/about.svg" alt="hi, i'm hein">
           </h1>
-          <p class="about-copy fadeIn-animation delay">
-            I’m a web developer based in California with full-stack experience. My road here was a winding one: I
-            majored in philosophy and explored several careers before choosing development. I’m grateful to all the
+          <p class="about-copy">
+            I’m a developer based in California with full-stack experience. My road here was a winding one: I
+            majored in philosophy and explored several careers before choosing programming. I’m grateful to all the
             people—from good friends to anonymous Stack Overflowers—who have helped me hit the ground running.
           </p>
-          <div class="download-resume fadeIn-animation delay">
+          <div class="download-resume">
             <a href="assets/pdfs/hein-jeong-resume.pdf" download="hein-jeong-resume">
               <img class="init-fade" onload="fadeIn(this)" src="./assets/icons/download.svg" alt="download resume">
               Resume
@@ -98,12 +96,17 @@
                   </ul>
                 </noscript>
                 <li>CSS</li>
+                <li>Digital Ocean</li>
                 <li>Express</li>
                 <li>Git</li>
                 <li>Javascript</li>
+                <li>MongoDB</li>
                 <li>Node.js</li>
-                <li>Postgres</li>
                 <li>React</li>
+                <li>Sass</li>
+                <li>SQL</li>
+                <li>Typescript</li>
+                <li>Webpack</li>
               </ul>
             </div>
             <div class="tools-copy-container budding">
@@ -111,7 +114,6 @@
                 <li>C++</li>
                 <li>Flask</li>
                 <li>Jasmine</li>
-                <li>MySQL</li>
                 <li>Python</li>
               </ul>
             </div>
@@ -157,7 +159,7 @@
           </h1>
           <div class="connect-icons">
             <div class="connect-icon-container">
-              <a target="_blank" href="https://github.com/hein-j">
+              <a target="_blank" rel="noreferrer" href="https://github.com/hein-j">
                 <img src="./assets/icons/github.svg" alt="github">
               </a>
             </div>
@@ -166,7 +168,7 @@
               <span>hein.jeong at gmail dot com</span>
             </div>
             <div class="connect-icon-container">
-              <a target="_blank" href="https://www.linkedin.com/in/hein-jeong">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hein-jeong">
                 <img src="./assets/icons/linkedin.svg" alt="linkedin">
               </a>
             </div>
