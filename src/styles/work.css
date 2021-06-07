@@ -59,7 +59,7 @@
 
 video {
   max-width: 100%;
-  max-height: var(--video-height-small);
+  max-height: 300px;
   display: block;
   margin: auto;
   margin-bottom: 15px;
@@ -131,24 +131,8 @@ video {
     padding-left: 20px;
   }
 
-  .outgoing-previous {
-    transform: translateX(var(--video-width-medium));
-  }
-  
-  .outgoing-next {
-    transform: translateX(calc(-1 * var(--video-width-medium)));
-  }
-  
-  .incoming-previous {
-    transform: translateX(calc(-1 * var(--video-width-medium)));
-  }
-  
-  .incoming-next {
-    transform: translateX(var(--video-width-medium));
-  }
-
   video {
-    max-height: var(--video-height-medium);
+    max-height: 400px;
     margin-bottom: 25px;
   }
 

@@ -31,11 +31,7 @@ h1 {
 }
 
 :root {
-  --video-width-small: 250px;
-  --video-height-small: 200px;
   --connect-icon-small: 150px;
-  --video-width-medium: 610px;
-  --video-height-medium: 380px;
   --connect-icon-medium: 200px;
 
 }
