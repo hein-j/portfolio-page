@@ -1,117 +1,50 @@
 /** 360 x 640 **/
-
 .tools-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  row-gap: 25px;
-  column-gap: 15px;
-  position: relative;
-}
-
-.tools-icon-container {
-  display: grid;
-  align-items: center;
-}
-
-.tools-icon {
-  width: max-content;
-  justify-self: right;
-}
-
-.tools-icon > img {
-  display: block;
-  width: 120px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.tools-icon > span {
-  display: block;
-  width: 100%;
   text-align: center;
-  font-weight: 700;
 }
 
-.budding.tools-icon {
-  justify-self: left;
+.tool-group {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: solid 1px gray;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.budding.tools-icon >img {
-  width: 60px;
-}
-
-.budding.tools-copy-container {
-  text-align: right;
-}
-
-.tools-copy {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.tools-copy ul {
-  margin: 0;
-  padding-left: 20px;
-  list-style-type: none;
-}
-
-.expand-aws {
-  cursor: pointer;
-}
-
-.expand-aws-button {
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: hsl(0, 0%, 80%);
-  margin: 0;
-  position: relative;
+.tool-group:last-child {
   border: none;
-  border-left: solid 5px white;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
 }
 
-.aws-details {
-  will-change: height;
-  height: 0;
-  overflow: hidden;
-  transition: height 300ms ease-in-out;
+.single-tool {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.expanded-aws-details {
-  height: 189px;
+.single-tool > i {
+  color: gray;
+  font-size: 30px;
 }
 
 /** 768 x 800 **/
 
 @media(min-width: 768px) {
-  .tools-container {
-    margin-top: 10px;
-    row-gap: 35px;
-    column-gap: 40px;
+
+  .tool-group {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .tools-icon > img {
-    width: 170px;
+  .single-tool {
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
-  .budding.tools-icon > img {
-    width: 85px;
+  .single-tool > i {
+    font-size: 40px;
   }
 
-  .tools-copy > ul {
-    padding-left: 25px;
-  }
-
-  .expand-aws-button {
-    padding-left: 7px;
-    padding-right: 7px;
-    border-left: solid 8px white;
-  }
-
-  .expanded-aws-details {
-    height: 250px;
-  }
 }

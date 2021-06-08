@@ -2,7 +2,7 @@ import './styles/shared.css';
 
 import './styles/about.css';
 
-import './components/tools';
+import './styles/tools.css';
 
 import './components/work';
 
