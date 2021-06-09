@@ -32,7 +32,7 @@ const content = [
   {
     class: 'voronoi',
     video: summer,
-    description: 'Built at the request of a ophthalmological researcher, this web app generates the Voronoi diagram of a given set of coordinates and performs statistical analysis on the areas of the resulting polygons.',
+    description: 'Built at the request of an ophthalmological researcher, this web app generates the Voronoi diagram of a given set of coordinates and performs statistical analysis on the areas of the resulting polygons.',
     icons: `${makeIcon(icons.website, 'https://voronoianalyzer.com/')} ${makeIcon(icons.github, 'https://github.com/hein-j/voronoi-analyzer')}`,
     stack: 'D3.js, React, Sass'
   },
