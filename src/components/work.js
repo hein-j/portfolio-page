@@ -27,28 +27,28 @@ const content = [
     video: spring,
     description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in development and single-handedly deployed to the cloud.',
     icons: 'Website launching soon!',
-    stack: 'Angular, AWS, Node (Express), Postgres'
+    stack: 'Angular, Node.js (Express), Postgres, AWS'
   },
   {
     class: 'voronoi',
     video: summer,
     description: 'Built at the request of an ophthalmological researcher, this web app generates the Voronoi diagram of a given set of coordinates and performs statistical analysis on the areas of the resulting polygons.',
     icons: `${makeIcon(icons.website, 'https://voronoianalyzer.com/')} ${makeIcon(icons.github, 'https://github.com/hein-j/voronoi-analyzer')}`,
-    stack: 'D3.js, React, Sass'
+    stack: 'React, Sass, D3.js'
   },
   {
     class: 'ayurveda',
     video: fall,
     description: 'Ayurveda is a system of traditional medicine with roots in ancient India. This REST API provides information on what it says about specific food items, so that end users can make dietary choices informed by ayurveda.',
     icons: `${makeIcon(icons.website, 'https://doc.ayurvedaapi.com/')} ${makeIcon(icons.github, 'https://github.com/hein-j/ayurveda-api')}`,
-    stack: 'Digital Ocean, MongoDB, Node (Express)'
+    stack: 'Node.js (Express), MongoDB, Digital Ocean'
   },
   {
     class: 'reddit',
     video: winter,
     description: 'Ever wonder how a subreddit feels about a certain subject? This script can provide insight. Input the name of a subreddit and a key word/phrase to view bar plot representations of the sentiment analysis.',
     icons: `${makeIcon(icons.github, 'https://github.com/hein-j/reddit-sentiment-analysis')}`,
-    stack: 'NLTK, PRAW, Python3'
+    stack: 'Python3, NLTK, PRAW'
   }
 ]
 
