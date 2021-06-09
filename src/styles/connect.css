@@ -30,6 +30,7 @@
   height: 0px;
   overflow: hidden;
   transition: height 300ms ease-in-out;
+  text-decoration: underline;
 }
 
 .mail-container > span.expanded-email {
