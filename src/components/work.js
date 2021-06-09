@@ -25,7 +25,7 @@ const content = [
   {
     class: 'spring',
     video: spring,
-    description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in both development and deployment.',
+    description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in development and single-handedly deployed to the cloud.',
     icons: 'Website launching soon!',
     stack: 'Angular, AWS, Node (Express), Postgres'
   },
