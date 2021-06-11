@@ -59,7 +59,7 @@
 
 video {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 200px;
   display: block;
   margin: auto;
   margin-bottom: 15px;
@@ -68,10 +68,6 @@ video {
 .description-copy {
   margin: auto;
   margin-bottom: 15px;
-}
-
-.spring .description-copy {
-  width: 169px;
 }
 
 .work-icon-container {
@@ -132,17 +128,13 @@ video {
   }
 
   video {
-    max-height: 400px;
+    max-height: 310px;
     margin-bottom: 25px;
   }
 
   .description-copy {
     margin: auto;
     margin-bottom: 20px;
-  }
-
-  .spring .description-copy {
-    width: 100%;
   }
 
   .work-icon-container {
