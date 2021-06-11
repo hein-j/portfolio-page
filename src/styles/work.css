@@ -5,7 +5,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
-  height: 500px;
+  height: 400px;
 }
 
 .slider-button-container {
@@ -59,7 +59,7 @@
 
 video {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 150px;
   display: block;
   margin: auto;
   margin-bottom: 15px;
@@ -116,7 +116,7 @@ video {
 
   .work-container {
     margin-top: 10px;
-    height: 618px;
+    height: 530px;
   }
 
   .slider-button-container {
