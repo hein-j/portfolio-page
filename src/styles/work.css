@@ -79,6 +79,10 @@ video {
   margin-bottom: 15px;
 }
 
+.work-icon-container {
+  font-style: italic;
+}
+
 .work-icon-container img {
   height: 30px;
   display: block;
