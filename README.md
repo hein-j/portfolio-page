@@ -6,14 +6,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About
 
-'Tis my portfolio page, under construction. 
+'Tis my portfolio page. Feel free to use any elements for your own projects.
 
 ### Built With
 
 * [Webpack](https://webpack.js.org)
-
-## Forking
-Feel free to fork away and use any elements for your own projects.
 
 ## Contributing
 
