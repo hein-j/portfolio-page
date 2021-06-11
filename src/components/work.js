@@ -1,10 +1,10 @@
 import '../styles/work.css';
-import spring from '../assets/videos/spring.mp4';
-import summer from '../assets/videos/summer.mp4';
-import fall from '../assets/videos/fall.mp4';
-import winter from '../assets/videos/winter.mp4';
 import github from '../assets/icons/github.svg';
 import website from '../assets/icons/website.svg';
+import reddit from '../assets/videos/reddit-sentiment-analysis.mp4';
+import voronoi from '../assets/videos/voronoi-analyzer.mp4';
+import ayurveda from '../assets/videos/ayurveda-api.mp4';
+import herosJourney from '../assets/videos/heros-journey.mp4';
 
 const icons = {
   github: {
@@ -23,29 +23,29 @@ const makeIcon = (iconObj, url) => {
 
 const content = [
   {
-    class: 'spring',
-    video: spring,
+    class: 'heros-journey',
+    video: herosJourney,
     description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in development and single-handedly deployed to the cloud.',
     icons: 'Website launching soon!',
     stack: 'Angular, Node.js (Express), Postgres, AWS'
   },
   {
     class: 'voronoi',
-    video: summer,
+    video: voronoi,
     description: 'Built at the request of an ophthalmological researcher, this web app generates the Voronoi diagram of a given set of coordinates and performs statistical analysis on the areas of the resulting polygons.',
     icons: `${makeIcon(icons.website, 'https://voronoianalyzer.com/')} ${makeIcon(icons.github, 'https://github.com/hein-j/voronoi-analyzer')}`,
     stack: 'React, Sass, D3.js'
   },
   {
     class: 'ayurveda',
-    video: fall,
+    video: ayurveda,
     description: 'Ayurveda is a system of traditional medicine with roots in ancient India. This REST API provides information on what it says about specific food items, so that end users can make dietary choices informed by ayurveda.',
     icons: `${makeIcon(icons.website, 'https://doc.ayurvedaapi.com/')} ${makeIcon(icons.github, 'https://github.com/hein-j/ayurveda-api')}`,
     stack: 'Node.js (Express), MongoDB, Digital Ocean'
   },
   {
     class: 'reddit',
-    video: winter,
+    video: reddit,
     description: 'Ever wonder how a subreddit feels about a certain subject? This script can provide insight. Input the name of a subreddit and a key word/phrase to view bar plot representations of the sentiment analysis.',
     icons: `${makeIcon(icons.github, 'https://github.com/hein-j/reddit-sentiment-analysis')}`,
     stack: 'Python3, NLTK, PRAW'
