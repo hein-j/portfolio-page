@@ -27,6 +27,13 @@
   font-size: 30px;
 }
 
+#testing-library-icon {
+  opacity: .5;
+  display: block;
+  width: 25px;
+  margin: auto;
+}
+
 /** 768 x 800 **/
 
 @media(min-width: 768px) {
@@ -46,5 +53,11 @@
   .single-tool > i {
     font-size: 40px;
   }
+
+  #testing-library-icon {
+    width: 40px;
+  }
+
+
 
 }
