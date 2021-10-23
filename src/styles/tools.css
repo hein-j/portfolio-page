@@ -27,7 +27,7 @@
   font-size: 30px;
 }
 
-#testing-library-icon {
+.img-icon {
   opacity: .5;
   display: block;
   width: 25px;
@@ -54,7 +54,7 @@
     font-size: 40px;
   }
 
-  #testing-library-icon {
+  .img-icon {
     width: 40px;
   }
 
