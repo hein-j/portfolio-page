@@ -1,8 +1,8 @@
 import '../styles/tools.css';
+import cypress from '../assets/icons/tools/cypress.svg'
 import reactTestingLibrary from '../assets/icons/tools/reactTestingLibrary.svg';
 import enzyme from '../assets/icons/tools/enzyme.svg';
 import tools from '../assets/texts/tools.svg';
-
 const content = {
   frontendScript: {
     Javascript: {
@@ -100,6 +100,11 @@ const content = {
     },
   },
   testing: {
+    Cypress: {
+      icon: {
+        src: cypress
+      }
+    },
     Jest: {
       icon: {
         devicon: 'jest-plain'
