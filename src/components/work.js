@@ -5,6 +5,7 @@ import reddit from '../assets/videos/reddit-sentiment-analysis.mp4';
 import voronoi from '../assets/videos/voronoi-analyzer.mp4';
 import ayurveda from '../assets/videos/ayurveda-api.mp4';
 import herosJourney from '../assets/videos/heros-journey.mp4';
+import amplifyStudio from '../assets/videos/amplify-studio.mp4';
 
 const icons = {
   github: {
@@ -23,10 +24,18 @@ const makeIcon = (iconObj, url) => {
 
 const content = [
   {
+    class: 'amplify-studio',
+    video: amplifyStudio,
+    description: 'I am currently a part of the team working on AWS Amplify Studio, a rapidly-evolving visual interface for building full-stack applications.',
+    icons: `${makeIcon(icons.website, 'https://docs.amplify.aws/console/')}`,
+    stack: ''
+
+  },
+  {
     class: 'heros-journey',
     video: herosJourney,
     description: 'Conceptualized by a psychologist, Hero’s Journey Interactive is a multimedia application serving clinical and research purposes. I played key roles in development and deployment.',
-    icons: 'Website launching soon!',
+    icons: `${makeIcon(icons.website, 'https://herosjourneyinteractive.com/')}`,
     stack: 'Angular, Node.js (Express), Postgres, AWS'
   },
   {
