@@ -66,11 +66,6 @@ const content = {
     },
   },
   data: {
-    Python: {
-      icon: {
-        devicon: 'python-plain'
-      }
-    },
     PostgreSQL: {
       icon: {
         devicon: 'postgresql-plain'
