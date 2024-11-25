@@ -9,7 +9,7 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "build:prod": "webpack --config webpack.config.prod.js",
-    "deploy": "npm run build:prod && gh-pages -d dist"
+    "deploy": "npm run build:prod && gh-pages -d dist --cname heinjeong.com"
   },
   "keywords": [],
   "author": "",
